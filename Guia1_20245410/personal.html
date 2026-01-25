@@ -3,79 +3,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>My S-Class Hunters - Review</title>
 </head>
-<body>
-    <nav>
-        <a href="#data">Data</a>
-        <a href="#plot">Plot</a>
-        <a href="#characters">Characters</a>
-        <a href="#review">Review</a>
-        <p>By Luz Salomon</p>
+<body class="font-sans text-stone-950">
+    <nav class="flex flex-row p-4 bg-red-700 h-20 w-full
+    items-center justify-between fixed z-10 lg:justify-start lg:gap-8
+    ">
+        <a href="#data" class="text-lg bg-gray-300 px-3 py-2 rounded-lg">Data</a>
+        <a href="#plot" class="text-lg bg-gray-300 px-3 py-2 rounded-lg">Plot</a>
+        <a href="#characters" class="text-lg bg-gray-300 px-3 py-2 rounded-lg">Characters</a>
+        <a href="#review" class="text-lg bg-gray-300 px-3 py-2 rounded-lg">Review</a>
     </nav>
-    <header id="data">
-        <img src="../IMG/MSH_Cover.png" alt="My S-Class Hunters Novel Cover">
-        <h1>My S-Class Hunters</h1>
-        <p>Author: Geunseo</p>
-        <p>Genre: Action, Adventure, Comedy, Drama, Fantasy, Supernatural</p>
-        <p>Published: 2018</p>
-        <p>Chapters: 1165</p>
-        <p>Rating: 4.5/5</p>
+    <div class="h-24"></div>
+    <header id="data" 
+    class="py-5 px-5 border-2 mx-4 flex flex-col gap-4 md:flex-row" 
+    >
+        <img src="../IMG/MSH_Cover.png" 
+        alt="My S-Class Hunters Novel Cover"
+        class="h-70 m-auto">
+        <div class="border-t-1 border-gray-400 flex flex-col gap-4 ">
+            <h1 class="text-3xl font-bold">My S-Class Hunters</h1>
+            <p><b>Author:</b> Geunseo</p>
+            <div class="flex flex-row flex-wrap gap-4"><b>Genre:</b> 
+                <p class="bg-cyan-100 rounded-lg px-1">Action</p> 
+                <p class="bg-cyan-100 rounded-lg px-1">Adventure</p> 
+                <p class="bg-cyan-100 rounded-lg px-1">Comedy</p> 
+                <p class="bg-cyan-100 rounded-lg px-1">Drama</p> 
+                <p class="bg-cyan-100 rounded-lg px-1">Fantasy</p> 
+                <p class="bg-cyan-100 rounded-lg px-1">Supernatural</p>
+            </div>
+            <p><b>Published:</b> 2018</p>
+            <p><b>Chapters:</b> 1165</p>
+            <p><b>Rating:</b> 4.5/5</p>
+        </div>
     </header>
     <main>
-        <div id="plot">
-            <h2>Official synopsis</h2>
-            <p>An utterly useless, pathetic F-Rank older brother who only drags down his successful S-Rank younger brother.</p>
-            <p>After living a messed-up life, eventually dragging even my brother’s life down with me, I was given the title after my regression:</p>
-            <p>‘Perfect Nurturer.’</p>
-            <p>Fine, this time, I’ll just stay quiet and support those brilliant guys from the shadows.</p>
-            <p>Or so I thought, but the S-Ranks are acting a little strange.</p>
+        <div id="plot" class="p-4">
+            <h2 class="text-2xl font-bold">Official synopsis</h2>
+            <p class="text-lg py-2">An utterly useless, pathetic F-Rank older brother who only drags down his successful S-Rank younger brother.</p>
+            <p class="text-lg py-2">After living a messed-up life, eventually dragging even my brother’s life down with me, I was given the title after my regression:</p>
+            <p class="text-lg py-2">‘Perfect Nurturer.’</p>
+            <p class="text-lg py-2">Fine, this time, I’ll just stay quiet and support those brilliant guys from the shadows.</p>
+            <p class="text-lg py-2">Or so I thought, but the S-Ranks are acting a little strange.</p>
         </div>
-        <h2>Main characters</h2>
-        <div id="characters">
-            <div>
-                <img src="" alt="Official novel art of Han Yoojin">
-                <h3>Han Yoojin</h3>
-                <p></p>
+        <h2 class="text-2xl font-bold p-4">Main characters</h2>
+        <div id="characters" class="p-4 flex flex-col gap-6 md:flex-row md:flex-wrap justify-center items-center lg:items-stretch">
+            <div class="flex flex-col border-2 rounded-lg p-4 w-6/7 md:w-1/3 lg:w-1/4">
+                <img src="../IMG/HYJ_novel.jpg" 
+                alt="Official Webtoon art of Han Yoojin"
+                class="h-70 m-auto rounded-lg">
+                <h3 class="text-xl font-bold py-2">Han Yoojin</h3>
+                <p class="text-lg py-2">Han Yoojin (Korean: 한유진, RR: Han Yujin) is an stat F-rank Hunter and the protagonist of The S-Ranks That I Raised. He dedicates his childhood to raising his younger brother Han Yoohyun. When Yoohyun eventually Awakens as an S-rank Hunter and later sacrifices himself to save his brother's life, Han Yoojin goes back in time to prevent his death.</p>
             </div>
-            <div>
-                <img src="" alt="Official novel art of Han Yoohyun">
-                <h3>Han Yoohyun</h3>
-                <p></p>
+            <div class="flex flex-col border-2 rounded-lg p-4 w-6/7 md:w-1/3 lg:w-1/4">
+                <img src="../IMG/HYH_novel.jpg" 
+                alt="Official Webtoon art of Han Yoohyun"
+                class="h-70 m-auto rounded-lg">
+                <h3 class="text-xl font-bold py-2">Han Yoohyun</h3>
+                <p class="text-lg py-2">Han Yoohyun (Korean: 한유현, RR: Han Yuhyeon) is one of the strongest Korean S-rank Hunters and the leader of Haeyeon Guild. He is the younger brother of Han Yoojin, who he is a steadfast supporter of and for whom he sacrificed himself in the original timeline.</p>
             </div>
-            <div>
-                <img src="" alt="Official novel art of Bak Yerim">
-                <h3>Bak Yerim</h3>
-                <p></p>
+            <div class="border-2 rounded-lg p-4 w-6/7 md:w-1/3 lg:w-1/4">
+                <img src="../IMG/BYR_novel.jpg" 
+                alt="Official Webtoon art of Bak Yerim"
+                class="h-70 m-auto rounded-lg">
+                <h3 class="text-xl font-bold py-2">Bak Yerim</h3>
+                <p class="text-lg py-2">Bak Yerim (Korean: 박예림, RR: Bak Yerim) is an S-rank Hunter specializing in combat magic. She is an adoptive member of Han Yoojin's family and a member of Haeyeon Guild.</p>
             </div>
-            <div>
-                <img src="" alt="Official novel art of Sung Hyunjae">
-                <h3>Sung Hyunjae</h3>
-                <p></p>
+            <div class="border-2 rounded-lg p-4 w-6/7 md:w-1/3 lg:w-1/4">
+                <img src="../IMG/SHJ_novel.jpg" 
+                alt="Official Webtoon art of Sung Hyunjae"
+                class="h-70 m-auto rounded-lg">
+                <h3 class="text-xl font-bold py-2">Sung Hyunjae</h3>
+                <p class="text-lg py-2">Sung Hyunjae (Korean: 성현제, RR: Seong Hyeonje) is the leader of Seseong Guild and one of the strongest Korean S-rank Hunters. He is an extremely talented and skilled man with a penchant for pursuing interesting or fun things, and holds a particular interest in Han Yoojin and Song Taewon.</p>
             </div>
-            <div>
-                <img src="" alt="Official novel art of Song Taewon">
-                <h3>Song Taewon</h3>
-                <p></p>
+            <div class="border-2 rounded-lg p-4 w-6/7 md:w-1/3 lg:w-1/4">
+                <img src="../IMG/STW_novel.jpg" 
+                alt="Official Webtoon art of Song Taewon"
+                class="h-70 m-auto rounded-lg">
+                <h3 class="text-xl font-bold py-2">Song Taewon</h3>
+                <p class="text-lg py-2">Song Taewon (Korean: 송태원, RR: Song Taewon) is an S-rank Hunter affiliated with the Hunter Association. He is the only S-rank Hunter to work under the nation rather than a guild[1], which is a subject of dissent between him and the other South Korean S-rank Hunters.</p>
             </div>
-            <div>
-                <img src="" alt="Official novel art of Peace">
-                <h3>Peace</h3>
-                <p></p>
+            <div class="border-2 rounded-lg p-4 w-6/7 md:w-1/3 lg:w-1/4">
+                <img src="../IMG/Peace_novel.jpg" 
+                alt="Official novel art of Peace"
+                class="h-70 m-auto rounded-lg">
+                <h3 class="text-xl font-bold py-2">Peace</h3>
+                <p class="text-lg py-2">Peace (Korean: 피스, RR: Piseu) is a Horned Flame Lion, a Tier 2 fire-attribute monster, who was raised by Han Yoojin. He currently acts as the kiseungsu for Haeyeon Guild Leader Han Yoohyun; when not accompanying him on dungeon raids, Peace stays with Han Yoojin at the kiseungsu rearing facility.</p>
             </div>
-            <div>
-                <img src="" alt="Official novel art of Chirpie">
-                <h3>Chirpie</h3>
-                <p></p>
+            <div class="border-2 rounded-lg p-4 w-6/7 md:w-1/3 lg:w-1/4">
+                <img src="../IMG/Chirpie_novel.jpg" 
+                alt="Official novel art of Chirpie"
+                class="h-70 m-auto rounded-lg">
+                <h3 class="text-xl font-bold py-2">Chirpie</h3>
+                <p class="text-lg py-2">Chirpie (Korean: 삐약, RR: Ppiyak, lit. "chirp") is a mutant monster that was found by and currently resides with Han Yoojin. It is slightly glitched, not appearing properly in the system. Chirpie's rank and abilities are shrouded in mystery, with it temporarily revealing skills as high as L-rank.</p>
             </div>
         </div>
-        <div id="review">
-            <h2>Personal review</h2>
-            <p></p>
+        <div id="review" class="p-4">
+            <h2 class="text-2xl font-bold py-2">Personal review</h2>
+            <p class="text-lg py-2">Many will call this a copy of Solo Leveling, 
+                however the moment you give it a try you notice 
+                that it couldn't be further from the truth.</p>
+            <p class="text-lg py-2">I love this novel and has become one of my 
+                all time favorites. At the beginning it's 
+                a bit slow and some plot points feel disjointed 
+                (this gets better further on, as the author 
+                gains experience); however the character 
+                building never misses. Geunso is stellar when 
+                it comes to explore the characters and their 
+            relationships.</p>
+            <p class="text-lg py-2">Unlike many stories (novels and manhwas alike), 
+                this one lacks a romantic subplot. Yet, in my eyes, 
+                it's the one that delves deeper into themes of love and all 
+                the forms it could take besides the romantic love media has 
+                us all used to. From the love shown between brothers, to the 
+                one shown between a parent towards their kids, to the bond 
+                shared between kindred souls. The nuance and layers each 
+                relationship shows and how it changes through chapters it's 
+                poetic and beautiful to read.</p>
+            <p class="text-lg py-2">
+                My favorite part of the novel is how the author portrays Han Yoojin's 
+                mental state through narration. We meet the protagonist at a deeply unstable 
+                point in his life, saying he was at rock bottom wouldn't feel like an exaggeration 
+                and most of the novel is seen through his rather askew point of view, his impulses, 
+                self-loathing and normalization of pain lead us through this magnificent world of 
+                monsters and hunters. Yoojin is one of the best examples of an unreliable narrator, 
+                with his true colors and emotions flowing slowly through cracks requiring the audience 
+                to read between lines and uncover the lies he tells to himself for his own peace of mind. 
+                I find it a pity how the manhwa failed to show the most crocked sides of this character in favor 
+                of comedy and a lower PG-rating. 
+            </p>
+            <p class="text-lg py-2">I could spend numerous paragraphs talking about the novel and it's writing, however this review would 
+                turn into a retelling or essay instead. I would recommend anyone to read this novel more so if you enjoy 
+                character driven stories with complex characters and relationships left and right.
+            </p>
         </div>
     </main>
-    <footer>
-        <p>© 2026 Luz Salomon</p>
+    <footer class="bg-red-700 w-full h-20 p-4">
+        <p class="text-stone-400 text-center py-4">© 2026 Luz Salomon</p>
     </footer>    
 </body>
 </html>
